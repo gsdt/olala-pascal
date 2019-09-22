@@ -1,0 +1,16 @@
+<HighlightSetting>
+  <CommentLineStyle foreColor="#ff3eca02" backColor="Transparent" italic="no" bold="no" strikeout="no" underline="no" />
+  <CommentCurlyStyle foreColor="#ff3eca02" backColor="Transparent" italic="no" bold="no" strikeout="no" underline="no" />
+  <CommentDoubleStyle foreColor="#ff3eca02" backColor="Transparent" italic="no" bold="no" strikeout="no" underline="no" />
+  <OperatorStyle foreColor="White" backColor="Transparent" italic="no" bold="no" strikeout="no" underline="no" />
+  <NumberStyle foreColor="White" backColor="Transparent" italic="no" bold="no" strikeout="no" underline="no" />
+  <SharpCharStyle foreColor="Aqua" backColor="Transparent" italic="no" bold="no" strikeout="no" underline="no" />
+  <StringStyle foreColor="#ffff8000" backColor="Transparent" italic="no" bold="no" strikeout="no" underline="no" />
+  <InstructionCompileStyle foreColor="#ffeb1429" backColor="Transparent" italic="no" bold="no" strikeout="no" underline="no" />
+  <KeywordStyle foreColor="#ff80ffff" backColor="Transparent" italic="no" bold="no" strikeout="no" underline="no" />
+  <ClassNameStyle foreColor="White" backColor="Transparent" italic="no" bold="no" strikeout="no" underline="no" />
+  <VariableTypeStyle foreColor="#ff80ffff" backColor="Transparent" italic="no" bold="no" strikeout="no" underline="no" />
+  <DefaulStyle foreColor="White" backColor="Transparent" italic="no" bold="no" strikeout="no" underline="no" />
+  <Genaral fontName="Consolas" fontSize="12" />
+  <Background color="Black" />
+</HighlightSetting>

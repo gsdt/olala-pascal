@@ -1,0 +1,344 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{EBE443EE-F4C7-49E6-AC22-959CA62FAA05}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>OlalaPascal</RootNamespace>
+    <AssemblyName>OlalaPascal</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>1448650815_code.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="TabStrip, Version=2.0.2523.29272, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\TabStrip.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="About.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="About.Designer.cs">
+      <DependentUpon>About.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppSound.cs" />
+    <Compile Include="ASCII.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ASCII.Designer.cs">
+      <DependentUpon>ASCII.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CompilerSwitches.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CompilerSwitches.Designer.cs">
+      <DependentUpon>CompilerSwitches.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CustomHint.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CustomHint.Designer.cs">
+      <DependentUpon>CustomHint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Feedback.Designer.cs">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HighlightCodeSetting.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HighlightCodeSetting.Designer.cs">
+      <DependentUpon>HighlightCodeSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="History.cs" />
+    <Compile Include="Language.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OlalaPascalEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OlalaPascalEditor.Designer.cs">
+      <DependentUpon>OlalaPascalEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AppPath.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RunandCompile.cs" />
+    <Compile Include="Settings.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="SettingStatus.cs" />
+    <Compile Include="Startup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Startup.Designer.cs">
+      <DependentUpon>Startup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Translator.cs" />
+    <EmbeddedResource Include="About.resx">
+      <DependentUpon>About.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ASCII.resx">
+      <DependentUpon>ASCII.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CompilerSwitches.resx">
+      <DependentUpon>CompilerSwitches.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CustomHint.resx">
+      <DependentUpon>CustomHint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback.resx">
+      <DependentUpon>Feedback.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HighlightCodeSetting.resx">
+      <DependentUpon>HighlightCodeSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OlalaPascalEditor.resx">
+      <DependentUpon>OlalaPascalEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Startup.resx">
+      <DependentUpon>Startup.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\undo_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\redo_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\class_libraries.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\forward_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\backward0_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\property.png" />
+    <None Include="Resources\lightning.png" />
+    <None Include="Resources\box.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smile_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sad_16x16.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\FastColoredTextBox\FastColoredTextBox.csproj">
+      <Project>{6DD14A85-CCFC-4774-BD26-0F5772512319}</Project>
+      <Name>FastColoredTextBox</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit-padding-top.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bookmark--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layer--plus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\layer--minus.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bye.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lol.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rolleyes.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\unsure.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="1448650815_code.ico" />
+    <Content Include="htmlDesc.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="Resources\run_build_file.png" />
+    <None Include="Resources\run.png" />
+    <None Include="Resources\images.jpg" />
+    <None Include="Resources\run_copy.png" />
+    <None Include="Resources\images.png" />
+    <None Include="Resources\1443026740_Play.png" />
+    <None Include="Resources\1448650965_code.png" />
+    <None Include="Resources\logo-while.png" />
+    <None Include="Resources\inc.ico" />
+    <None Include="Resources\pp.ico" />
+    <None Include="Resources\pas.ico" />
+    <None Include="Resources\logo.png" />
+    <None Include="Resources\1448827449_facebook.png" />
+    <None Include="Resources\1448829723_Close_Box_Red.png" />
+    <None Include="Resources\extend.jpg" />
+    <None Include="Resources\full.jpg" />
+    <None Include="Resources\1449154216_scissors.ico" />
+    <None Include="Resources\1449154767_copy.ico" />
+    <None Include="Resources\1449154792_edit-paste.ico" />
+    <None Include="Resources\1449154873_063_Undo.ico" />
+    <None Include="Resources\1449154894_black_2_audio_simple_repeat.ico" />
+    <None Include="Resources\1449154995_search.ico" />
+    <None Include="Resources\1449154981_edit-find-replace.ico" />
+    <None Include="Resources\1449155101_ic_format_textdirection_r_to_l_48px.ico" />
+    <None Include="Resources\1449154258_document.ico" />
+    <None Include="Resources\1449154150_folder-close.ico" />
+    <None Include="Resources\1449154091_save.ico" />
+    <None Include="Resources\1449154528_vector_66_15.ico" />
+    <None Include="Resources\1449154629_button_close.ico" />
+    <None Include="Resources\1449154575_exit.ico" />
+    <None Include="Resources\1449155516_136_TriangleRight.png" />
+    <None Include="Resources\TriangleRight.png" />
+    <None Include="Resources\1449154183_calculator.ico" />
+    <None Include="Resources\1449159444_ascii.ico" />
+    <None Include="Resources\1449159504_adwords_editor.ico" />
+    <None Include="Resources\1449159645_window-api-coding-configuration.ico" />
+    <None Include="Resources\1449159676_Untitled-2-28.ico" />
+    <None Include="Resources\1449160929_config-language.ico" />
+    <None Include="Resources\1449160984_BeOS_Help_book.ico" />
+    <None Include="Resources\1449161015_19.ico" />
+    <None Include="Resources\1449161437_edit-select-all.png" />
+    <None Include="Resources\Classic.xml" />
+    <None Include="Resources\Light.xml" />
+    <None Include="Resources\Dark.xml" />
+    <None Include="Resources\1449321841_device-volume-loudspeaker-speaker-up-glyph.png" />
+    <None Include="Resources\1449321844_device-volume-loudspeaker-speaker-mute-glyph.png" />
+    <None Include="Resources\1449322634_screen-full.png" />
+    <None Include="Resources\1449383224_ic_content_cut_48px.png" />
+    <None Include="Resources\1449383302_Untitled-2-10.png" />
+    <None Include="Resources\1449383341_content-paste.png" />
+    <None Include="Resources\1449383459_editor-document-file-add-2-outline-stroke.png" />
+    <None Include="Resources\1449383547_ic_find_replace_48px.png" />
+    <None Include="Resources\1449386969_open-email.png" />
+    <None Include="Resources\1449387051_open-email.png" />
+    <None Include="Resources\1449600581_Next.png" />
+    <None Include="Resources\1450361868_circle-next-arrow-disclosure-glyph.png" />
+    <None Include="Resources\star-null.png" />
+    <None Include="Resources\star-yellow.png" />
+    <None Include="Resources\1465666949_Warning.png" />
+    <Content Include="TabStrip.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.1">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.1 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="bin\Debug\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>copy "$(TargetDir)Tester.exe" "$(SolutionDir)Binary"
+copy "$(TargetDir)*.dll" "$(SolutionDir)Binary"
+copy "$(TargetDir)*.xml" "$(SolutionDir)Binary"
+</PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
