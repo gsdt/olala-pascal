@@ -1,4 +1,5 @@
 # Olala Pascal
+*IDE cho ngôn ngữ lập trình Pascal*
 
 ## Tác giả:
  - [Nguyễn Anh Tuấn](https://fb.com/NguyenAnhTuanPage)
